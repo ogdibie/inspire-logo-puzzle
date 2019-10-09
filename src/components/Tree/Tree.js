@@ -8,18 +8,18 @@ import DroppableDot from '../DroppableDot'
 import styles from './Tree.module.css'
 
 export default class Tree extends Component {
-  images = {
-    redDot: redDot,
-    greenDot: greenDot,
-    blueDot: blueDot,
-    leftBlackDot: blackDot,
-    rightBlackDot: blackDot
-  }
+  images = [
+    { id: 'redDot', type: 'red', src: redDot },
+    { id: 'greenDot', type: 'green', src: greenDot },
+    { id: 'blueDot', type: 'blue', src: blueDot },
+    { id: 'leftBlackDot', type: 'black', src: blackDot },
+    { id: 'rightBlackDot', type: 'black', src: blackDot }
+  ]
   render() {
-    const dots = Object.keys(this.images).map((image) => {
+    const dots = this.images.map((image) => {
       return (
-        <div className={image} key={image}>
-          <DroppableDot imageSrc={this.images[image]} />
+        <div className={image.id} key={image.id}>
+          <DroppableDot imageSrc={image.src} type={image.type} />
         </div>
       )
     })
