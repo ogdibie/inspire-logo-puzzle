@@ -15,7 +15,7 @@ function DroppableDot(props) {
       src={props.imageSrc}
       alt=''
       style={{
-        opacity: props.show ? 1 : 0
+        opacity: props.show ? 1 : isOver ? 0.5 : 0
       }}
     />
   )
