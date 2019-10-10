@@ -1,13 +1,14 @@
 ### Basic Design of the App
+
 This project gives a simple solution to the Inspiration puzzle giving the dot images and a tree Image. The app was build using react and the react-dnd (drag and drop) library.
 
 I first started by trying to position the dot in the correction position in the tree. My thoughts was that if I can place a dot in a tree, I would just need to adjust the opacity to show it or not show it respectively. I used css relative and absolute position to place the elements to place each dot in the correct position. I added a click event (listener) to toggle the opacity to show or not show the dot when it was clicked. And then the I got freezed. At first, I tried to implement my own draggable functionality using the event datatransfer but I kept haven't difficulty (Note I didn't commit this part) since I was testing things out. Finally, after so much grinding, I figured how I could use the react-dnd(https://react-dnd.github.io/react-dnd/docs/overview) to save my life. I can chat some here but I don't want to moone about my shortcomings forever.
 
-Using react-dnd, I finished the problem. I restructured the app so that I had four components. 
+Using react-dnd, I finished the problem. I restructured the app so that I had four components.
 
-DraggableDot: Dot that can be dragged and placed in a Droppable dot Component. Using it, I could use react list to create a Draggable components for five dot that are used by the app. 
+DraggableDot: Dot that can be dragged and placed in a Droppable dot Component. Using it, I could use react list to create a Draggable components for five dot that are used by the app.
 
-DroppableDot: As mentioned above, it accepts Droppable Dot components. 
+DroppableDot: As mentioned above, it accepts Droppable Dot components.
 Note: Both the draggable and droppable dot components uses the react-dnd {useDrga} and {useDrop} hooks. more information about theses methods can be found on the react-dnd page
 
 Tree Component: It basically contains the tree and is passed five DroppableDots as children. The styling to position are all in the app.css file.
@@ -16,7 +17,19 @@ App: The App component basically manages the app. It handles the state manipulat
 
 There is still a lot of improvement that I can do in terms of styling but I am okay with it for now. I didn't write test for it which is bad I know but It fufils the requirement of the task.
 
+### Running the App
+
+As mentioned earlier, the app uses the react framework.
+
+1)Clone the repo ---git clone repo-name
+2)Install the dependencies ---npm install
+
+3. yarn start and that's it....
+
+Let me know what you thing
+
 ### React Design Details below
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
