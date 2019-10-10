@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ogdibie/inspire-logo-puzzle/static/css/main.7aedf619.chunk.css",
+    "main.js": "/ogdibie/inspire-logo-puzzle/static/js/main.0c761fcf.chunk.js",
+    "main.js.map": "/ogdibie/inspire-logo-puzzle/static/js/main.0c761fcf.chunk.js.map",
+    "runtime-main.js": "/ogdibie/inspire-logo-puzzle/static/js/runtime-main.9a44920d.js",
+    "runtime-main.js.map": "/ogdibie/inspire-logo-puzzle/static/js/runtime-main.9a44920d.js.map",
+    "static/js/2.540a9215.chunk.js": "/ogdibie/inspire-logo-puzzle/static/js/2.540a9215.chunk.js",
+    "static/js/2.540a9215.chunk.js.map": "/ogdibie/inspire-logo-puzzle/static/js/2.540a9215.chunk.js.map",
+    "index.html": "/ogdibie/inspire-logo-puzzle/index.html",
+    "precache-manifest.6d104f628d19df21d1a5ca32fdde1c17.js": "/ogdibie/inspire-logo-puzzle/precache-manifest.6d104f628d19df21d1a5ca32fdde1c17.js",
+    "service-worker.js": "/ogdibie/inspire-logo-puzzle/service-worker.js",
+    "static/css/main.7aedf619.chunk.css.map": "/ogdibie/inspire-logo-puzzle/static/css/main.7aedf619.chunk.css.map",
+    "static/media/ia-logo-back.png": "/ogdibie/inspire-logo-puzzle/static/media/ia-logo-back.b07ca556.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a44920d.js",
+    "static/js/2.540a9215.chunk.js",
+    "static/css/main.7aedf619.chunk.css",
+    "static/js/main.0c761fcf.chunk.js"
+  ]
+}
