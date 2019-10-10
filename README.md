@@ -4,6 +4,7 @@ This project gives a simple solution to the Inspiration puzzle giving the dot im
 I first started by trying to position the dot in the correction position in the tree. My thoughts was that if I can place a dot in a tree, I would just need to adjust the opacity to show it or not show it respectively. I used css relative and absolute position to place the elements to place each dot in the correct position. I added a click event (listener) to toggle the opacity to show or not show the dot when it was clicked. And then the I got freezed. At first, I tried to implement my own draggable functionality using the event datatransfer but I kept haven't difficulty (Note I didn't commit this part) since I was testing things out. Finally, after so much grinding, I figured how I could use the react-dnd(https://react-dnd.github.io/react-dnd/docs/overview) to save my life. I can chat some here but I don't want to moone about my shortcomings forever.
 
 Using react-dnd, I finished the problem. I restructured the app so that I had four components. 
+
 DraggableDot: Dot that can be dragged and placed in a Droppable dot Component. Using it, I could use react list to create a Draggable components for five dot that are used by the app. 
 
 DroppableDot: As mentioned above, it accepts Droppable Dot components. 
