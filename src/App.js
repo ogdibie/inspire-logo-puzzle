@@ -34,7 +34,14 @@ class App extends Component {
 
   resetApp = () => {
     this.setState({
-      dots: this.dots
+      dots: [
+        { id: 'redDot', type: 'red', showImage: false, image: redDot },
+        { id: 'blueDot', type: 'blue', showImage: false, image: blueDot },
+        { id: 'greenDot', type: 'green', showImage: false, image: greenDot },
+        { id: 'leftBlackDot', type: 'black', showImage: false, image: blackDot },
+        { id: 'rightBlackDot', type: 'black', showImage: false, image: blackDot }
+      ],
+      noCorrect: 0
     })
   }
 
@@ -60,22 +67,30 @@ class App extends Component {
         </div>
       )
     })
-    const doneText = this.state.noCorrect === 5 ? <h1>Congratulation, You have completed the quiz</h1> : null
+    const doneText = this.state.noCorrect === 5 ? <h1>Congratulations, you have completed the quiz!</h1> : null
 
+    const buttonShown =
+      this.state.noCorrect == 0 ? null : (
+        <button className='button' onClick={this.resetApp}>
+          Reset
+        </button>
+      )
     const itemToShow = this.state.dots.length > 0 ? dotsShown : <h1>You have sucessfully solved the problem</h1>
     return (
-      <DndProvider backend={HTML5Backend}>
-        <div
-          style={{
-            marginBottom: '16px'
-          }}
-        >
-          {itemToShow}
-          <button onClick={this.resetApp}>Reset</button>
-        </div>
-        <Tree>{treeDots}</Tree>
-        {doneText}
-      </DndProvider>
+      <div className='App'>
+        <DndProvider backend={HTML5Backend}>
+          <div
+            style={{
+              marginBottom: '16px'
+            }}
+          >
+            {itemToShow}
+          </div>
+          <Tree>{treeDots}</Tree>
+          {doneText}
+          {buttonShown}
+        </DndProvider>
+      </div>
     )
   }
 }

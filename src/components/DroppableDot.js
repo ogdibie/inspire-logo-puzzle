@@ -1,12 +1,9 @@
 import React, { useState } from 'react'
 import { useDrop } from 'react-dnd'
 function DroppableDot(props) {
-  const showDot = () => {
-    props.handleShowImage()
-  }
   const [{ isOver }, drop] = useDrop({
     accept: props.type,
-    drop: () => showDot(),
+    drop: () => props.handleShowImage(),
     collect: (monitor) => ({
       isOver: !!monitor.isOver()
     })
