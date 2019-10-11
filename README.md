@@ -17,6 +17,14 @@ App: The App component basically manages the app. It handles the state manipulat
 
 There is still a lot of improvement that I can do in terms of styling but I am okay with it for now. I didn't write test for it which is bad I know but It fufils the requirement of the task.
 
+### Challenges
+
+The main challenge that I had in using react-dnd was figuring out how it worked. I read the documentation at first but I did not quite understand. I decided to watch some videos of other people that leveraged it but I still did not get it. Finally I decided to go over a tutorial of building a chess game with dnd (https://react-dnd.github.io/react-dnd/docs/tutorial) and finally I got. I then restructured my app in a way that I could leverage the react-dnd. That's why I decided to restructure it to use draggable dot and droppable dot to create a way for me to drag and drop to specific regions.
+
+### Alternative Approaches
+
+If I were not using react,I could have done it all using the HTML drag and drop. I could have just had an application with plain javascript, html and css. I suppose I can used something like this:(https://www.w3schools.com/html/html5_draganddrop.asp)
+
 ### Running the App
 
 As mentioned earlier, the app uses the react framework.
